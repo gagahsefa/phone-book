@@ -11,12 +11,12 @@
  Follow these steps to install the application.
 1. Clone the Repository
 ```
-git clone https://github.com/MusheAbdulHakim/Pharmacy-management-system.git
+git clone https://github.com/gagahsefa/phone-book.git
 ```
 2. Go to project directory
 
 ```
-cd Pharmacy-management-system
+cd phone-book
 ```
 
 3. Install packages with composer
@@ -24,46 +24,41 @@ cd Pharmacy-management-system
 ```
 composer install
 ```
+4. Create your database 
 
-4. Install npm packages with 
-```
-npm install; npm run dev
-```
-5. Create your database 
-
-6. Rename .env.example to .env Or copy it and paste at project root directory and name the file .env.You can also use this command.
+5. Rename .env.example to .env Or copy it and paste at project root directory and name the file .env.You can also use this command.
 
 ```
 cp .env.example ./.env
 ```
-7. Generate app key with this command
+6. Generate app key with this command
 ```
 php artisan key:generate
 ```
 
-8. Set database connection to your database in the .env file.
+7. Set database connection to your database in the .env file.
 
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=doccure
+DB_DATABASE=phone_books
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-9. Import full database sql file in the database folder, or run migrations
+8. Import full database sql file in the database folder, or run migrations
 Use this command to run migrations
 
 ```
-php artisan migrate --seed
+php artisan migrate
 ```
-10. Start the local server and browser to your app.
+9. Start the local server and browser to your app.
 This command will start the development server
 ```
 php artisan serve
 ```
 
-11. Open the address in the terminal in your browser.Usually address is usually like this:
+10. Open the address in the terminal in your browser.Usually address is usually like this:
 ```
 http://127.0.0.1:8000
 ```
