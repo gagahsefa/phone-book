@@ -7,6 +7,37 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+Follow these steps to install the application.
+
+Clone the Repository
+git clone https://github.com/MusheAbdulHakim/Pharmacy-management-system.git
+Go to project directory
+cd Pharmacy-management-system
+Install packages with composer
+composer install
+Install npm packages with
+npm install; npm run dev
+Create your database
+
+Rename .env.example to .env Or copy it and paste at project root directory and name the file .env.You can also use this command.
+
+cp .env.example ./.env
+Generate app key with this command
+php artisan key:generate
+Set database connection to your database in the .env file.
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=doccure
+DB_USERNAME=root
+DB_PASSWORD=
+Import full database sql file in the database folder, or run migrations Use this command to run migrations
+php artisan migrate --seed
+Start the local server and browser to your app. This command will start the development server
+php artisan serve
+Open the address in the terminal in your browser.Usually address is usually like this:
+http://127.0.0.1:8000
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
