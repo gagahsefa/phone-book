@@ -17,13 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/', [EmployeeController::class, 'index']);
-// Route::post('/store', [EmployeeController::class, 'store'])->name('store');
-// Route::get('/fetchall', [EmployeeController::class, 'fetchAll'])->name('fetchAll');
-// Route::delete('/delete', [EmployeeController::class, 'delete'])->name('delete');
-// Route::get('/edit', [EmployeeController::class, 'edit'])->name('edit');
-// Route::post('/update', [EmployeeController::class, 'update'])->name('update');
-
 Route::get('/', [PhoneBookController::class, 'index']);
 Route::post('/store', [PhoneBookController::class, 'store'])->name('store');
 Route::get('/fetchall', [PhoneBookController::class, 'fetchAll'])->name('fetchAll');
